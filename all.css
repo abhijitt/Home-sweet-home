@@ -10,7 +10,7 @@ body{
 /*The background layer*/
 #layer_background
 {
-    position:absolute;
+    position:fixed;
     top:0px;
     bottom:0px;
     left:0px;
@@ -22,10 +22,10 @@ body{
     height:100%;
     width:100%;
 }
-/*The background layers*/
+/*The header layers*/
 #layer_header
 {
-    position:absolute;
+    position:fixed;
     top:0px;
     bottom:0px;
     left:0px;
@@ -38,4 +38,19 @@ body{
     top:10%;
     left:30px;
     display:table;
+}
+/*The content layers*/
+.layer_content
+{
+    position:absolute;
+    top:20%;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    z-index:-1;
+}
+.content_container
+{
+    margin:20px auto;
+    width:1000px;
 }
